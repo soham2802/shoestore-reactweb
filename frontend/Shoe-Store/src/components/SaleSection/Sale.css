@@ -1,0 +1,76 @@
+.promo-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.promo-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15); 
+  z-index: 1;
+}
+
+.promo-content {
+  position: relative;
+  z-index: 2;
+}
+
+.promo-title-small {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.promo-title-big {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.promo-btn {
+  background: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.promo-btn:hover {
+  background: #171717;
+  color: #fff;
+}
+
+.gift-section {
+  background-color: #f7f7f7;
+  padding: 30px 40px;
+}
+
+.gift-icon {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6E7051;
+  border-radius: 50%;
+  font-size: 26px;
+  color: #6E7051;
+}
+.x1{
+ background: #6E7051;
+  color: #fff;
+}

@@ -1,0 +1,55 @@
+/* Main text styles like Elementor */
+.contact-title {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-text {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Elementor-like spacing */
+.contact-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.contact-item p{
+    font-size: 18px;
+}
+.contact-item h5{
+    font-size: 20px;
+}
+.lab label{
+    font-size: 18px;
+    color: #A39A9B;
+    font-weight: 600;
+}
+.required {
+  color: #e63946;
+  font-weight: 700;
+  margin-left: 3px;
+}
+/* Icon color + pointer hand */
+.contact-icon {
+  color: #656d3a;   /* Elementor olive green */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #444;
+  transform: scale(1.05);
+}
+
+/* Social icons styling */
+.social-icon {
+  color: #777;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #000;
+  transform: scale(1.1);
+}

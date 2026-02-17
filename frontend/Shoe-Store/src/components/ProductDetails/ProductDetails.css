@@ -1,0 +1,347 @@
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+/* Product Image */
+.product-card img {
+  transition: transform 0.45s ease;
+  border-radius: 12px;
+}
+
+
+/* SALE BADGE */
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e63946;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  z-index: 8;
+  pointer-events: none;
+}
+
+/* QUICK VIEW BUTTON */
+.quick-view-btn {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 8px 26px;
+  border-radius: 25px;
+  font-size: 15px;
+  opacity: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.35s ease;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+
+
+/* Quick view hover effect */
+.quick-view-btn:hover {
+  background: #444;
+}
+
+/* Product Text */
+.product-card .card-body {
+  padding: 14px 5px 20px;
+  text-align: center;
+}
+
+.product-card .card-text {
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+/* Price styling */
+.product-card .price-old {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.product-card .price-new {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Better spacing for the whole section */
+.section-margin {
+  margin-top: 70px;
+}
+
+
+  .safe-checkout-box {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.safe-checkout-legend {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6c6c6c;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.safe-checkout-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.safe-checkout-icons img {
+  height: 20px !important;
+  object-fit: contain;
+}
+
+/* Container tweaks */
+.product-detail-row {
+  align-items: start;
+}
+
+/* LEFT: image panel */
+.product-image-wrap {
+  padding: 30px; /* outer white gutter so image sits inside like screenshot */
+}
+
+.product-image-bg {
+  background: #f2f2f0; /* pale neutral background like screenshot */
+  border-radius: 4px;
+  padding: 60px; /* controls visible padding around shoe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Zoom circle button */
+.zoom-btn {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a7a7a;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RIGHT: typography + price */
+.small-caps { letter-spacing: 0.4px; font-size: 0.95rem; color: #8a8a7a; }
+
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #222;
+}
+
+.price-row .product-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #888;
+}
+
+.price-row .product-shipping {
+  color: #7fb06b; /* slight green tone for "Free Shipping" or keep muted */
+  font-size: 0.95rem;
+}
+
+/* description */
+.product-desc {
+  color: #7f7f7f;
+  line-height: 1.9;
+  margin-top: .5rem;
+  opacity: 0.85;
+}
+
+/* Qty control styles */
+.qty-control {
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.qty-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.qty-input {
+  width: 66px;
+  padding: 8px 6px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Add to cart button (olive green like screenshot) */
+.add-cart-btn {
+  background-color: #656d3a;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+/* meta categories */
+.meta-cats a { color: #6c6c6c; }
+
+/* ------- Guaranteed Safe Checkout (legend centered + rounded box) ------- */
+.safe-checkout-box {
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 16px 18px 18px;
+  margin-top: 1rem;
+  position: relative;
+  background: #fff;
+}
+
+/* Centered legend that appears above the box and overlaps the border */
+.safe-checkout-legend {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8b8b8b;
+  text-align: center;
+  width: auto;
+  padding: 0 14px;
+  margin: 0 auto 10px;
+  line-height: 1;
+}
+
+/* Icons row inside the box */
+.safe-checkout-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding: 10px 20px;
+}
+
+.safe-checkout-icons img {
+  height: 34px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .product-image-bg { padding: 36px; }
+  .product-title { font-size: 26px; }
+  .price-row .product-price { font-size: 22px; }
+  .safe-checkout-legend { font-size: 18px; }
+}
+
+/* -------- Safe Checkout Box -------- */
+.safe-checkout-box {
+  border: 1px solid #e5e5e5;
+  padding: 16px 20px;
+  margin-top: 100px !important;
+  border-radius: 6px;
+  background: #fff;
+  max-width: 80%;
+}
+.payment-icons img {
+  width: 60px;      /* change as needed */
+  height: 35px;     /* change as needed */
+  object-fit: contain;
+}
+
+.safe-checkout-title {
+  text-align: center;
+  font-size: 16px;
+  color: #9a9a9a;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.payment-icons img {
+  height: 28px;
+  object-fit: contain;
+}
+
+.product-image-wrap {
+  overflow: hidden;
+}
+
+.zoomable-img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+.toast-cart {
+  position: fixed;
+  top: 100px;
+  right: -400px;
+  background: #090a0a;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+}
+
+.toast-cart.show {
+  right: 20px;
+}
